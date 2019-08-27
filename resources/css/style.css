@@ -25,18 +25,77 @@ html {
 	margin: 0 auto;
 }
 
-/* --------- HEADINGS --------- */
+section {
+	padding: 80px 0;
+}
 
-h1 {
-	margin: 0;
-	color: #fff;
-	font-size: 240%;
+.box {
+	padding: 1%;
+}
+
+/* --------- HEADINGS --------- */
+h1,
+h2,
+h3 {
 	text-transform: uppercase;
 	font-weight: 300;
-	letter-spacing: 1px;
-	word-spacing: 4px;
-	margin-bottom: 20px;
 }
+
+h1 {
+	margin-top:0;
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 240%;
+	word-spacing: 4px;
+	letter-spacing: 1px;
+	
+}
+
+h2 {
+	font-size: 180%;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h2:after {
+	height: 2px;
+	width: 100px;
+	display: block;
+	background-color: #e67e22;
+	content: " ";
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+h3 {
+	font-size: 110%;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+}
+
+/* --------- PARAGRAPHS --------- */
+
+.long-copy {
+	line-height: 145%;
+	width: 70%;
+	margin-left: 17%;
+}
+
+.box p {
+	font-size: 90%;
+	line-height: 145%;
+}
+
+/* --------- ICONS --------- */
+
+.icon-big {
+	font-size: 350%;
+	display: block;
+	color: #e67e22;
+	margin-bottom: 10px;
+}
+
 
 /* --------- BUTTONS --------- */
 
@@ -81,6 +140,39 @@ h1 {
 }
 
 /*--------------------------------------------------*/
+/* MEALS */
+/*--------------------------------------------------*/
+
+.section-meals {
+	padding: 0;
+}
+
+.meals-showcase {
+	list-style: none;
+	width: 100%;
+}
+
+.meals-showcase li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.meal-photo {
+	width: 100%;
+	margin: 0;
+}
+
+.meal-photo img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+/*--------------------------------------------------*/
 /* HEADER */
 /*--------------------------------------------------*/
 
@@ -89,7 +181,6 @@ header {
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
-
 }
 
 .hero-text-box {
@@ -126,7 +217,7 @@ header {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 90%;
-	border-bottom: 2px solid transpert;
+	border-bottom: 2px solid transparent;
 	transition: border-bottom 0.5s;
 }
 
@@ -135,3 +226,4 @@ header {
 	border-bottom: 2px solid #e67e22;
 
 }
+
